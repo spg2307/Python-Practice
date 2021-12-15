@@ -1,0 +1,14 @@
+--> Write a function that returns the cumulative sum of elements in a list
+
+
+def solution(input):
+    olist = []
+    sum = 0
+    for i in range(len(input)):
+        sum += input[i]
+        olist.append(sum)
+    return olist
+
+    
+print(solution([1,1,1]))
+print(solution([1,-1,3]))
