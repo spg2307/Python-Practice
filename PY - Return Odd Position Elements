@@ -1,0 +1,12 @@
+--> Write a function that returns the elements on odd positions (0 based) in a list
+
+def solution(input):
+    olist = []
+    for i in range(len(input)):
+        if i%2 != 0:
+            olist.append(input[i])
+    return olist
+
+    
+print(solution([0,1,2,3,4,5]))
+print(solution([1,-1,2,-2]))
