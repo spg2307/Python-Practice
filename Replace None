@@ -1,0 +1,14 @@
+From <https://igotanoffer.com/blogs/tech/facebook-data-engineer-interview> 
+
+• Given an array containing None values fill in the None values with most recent non None value in the array. For example:input array: [1,None,2,3,None,None,5,None] # - output array: [1,1,2,3,3,3,5,5]
+
+l1 = [1,None,2,3,None,None,5,None]
+l2 = []
+for i in range(len(l1)):
+    print(i)
+    if l1[i] == None:
+       l2.append(l1[i-1])
+    else:
+        l2.append(l1[i])
+    
+print(l2)
