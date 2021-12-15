@@ -1,0 +1,22 @@
+From <https://igotanoffer.com/blogs/tech/facebook-data-engineer-interview> 
+
+• Complete a function that returns a list containing all the mismatched words (case sensitive) between two given input strings # For example: string 1 : "Firstly this is the first string" # - string 2 : "Next is the second string" # # - output : ['Firstly', 'this', 'first', 'Next', 'second']
+
+def returnunmatched(str1, str2):
+    s1 = str1.split()
+    s2 = str2.split()
+    ls1 = []
+    for i in s1:
+        if i not in s2:
+            ls1.append(i)
+
+    for i in s2:
+        if i not in s1:
+            ls1.append(i)
+    return ls1    
+
+        
+str1 = 'My Name is Sujit'
+str2 = 'My Age is 35'
+
+print(returnunmatched(str1,str2))
